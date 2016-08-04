@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'zardak:soap',
+  name: 'gradycongdon:soap',
   version: '0.2.6',
   summary: 'Wrapped npm soap package',
-  git: 'https://github.com/zardak/meteor-soap',
+  git: 'https://github.com/gradycongdon/meteor-soap',
   documentation: 'README.md'
 });
 
@@ -18,7 +18,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.use(['coffeescript', 'tinytest', 'zardak:soap']);
+  api.use(['coffeescript', 'tinytest', 'gradycongdon:soap']);
   api.addFiles('tests/data.js', 'server');
   api.addFiles('tests/tests.coffee', 'server');
 });
